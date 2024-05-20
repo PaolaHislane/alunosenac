@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>Cadastro de User</h2>
+
+<form>
+  <label for="fname">Primeiro nome:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+ 
+ 
+  <label for="dia">Data:</label><br>
+  <input type="date" id="dia" name="data" value=""><br>
+ 
+  <label for="files">Select Files</label>
+  <input type="file" id="files" name="files" multiple><br>
+ 
+  <label for="lname">Sobrenome:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <label for="cpfname">CPF:</label><br>
+  <input type="text" id="cpfname" name="cpfname" value="99999999999"><br>
+ 
+ 
+  <input type="radio" id="html" name="language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="language" value="JAVA SCRIPT">
+  <label for="javascript">JAVASCRIPT</label><br>
+  <input type="submit" Value="Submit"><br><br>
+ 
+  <input type="checkbox" id="bike" name="bike" value="Bicicleta">
+  <label for="bike">Eu tenho uma bike</label><br>
+  <input type="checkbox" id="car" name="car" value="Carro">
+  <label for="car">Eu tenho um Carro</label><br>
+  <input type="checkbox" id="barco" name="barco" value="Barco">
+  <label for="barco">Eu tenho um Barco</label><br>
+ 
+  <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="EDGED">
+    </datalist>
+    <br>
+    <label for="cars">Mudar carros:</label>
+    <select id="cars" name="cars">
+        <option value="Fiat">Fiat</option>
+        <option value="Honda">Honda</option>
+    </select>
+    <br>
+    <textarea name="message" rows="10" cols="30"> O gato mia...</textarea>
+   
+</form>
+<p>Observe que o formulário em si não está visível.</p>
+
+<p>Observe também que a largura padrão dos campos de entrada de texto é de 20 caracteres.</p>
+
+</body>
+</html>

@@ -1,4 +1,5 @@
 <?php
+//Numeros sortidos
 define("INFERIOR",1);
 define("SUPERIOR",100);
 
@@ -77,3 +78,65 @@ $cars =array("BMW","BYD","AUDI");
 var_dump($cars);
 echo "<br>";
 ?>
+<?php
+//contagem de letras
+echo"<br>";
+echo strlen("Olá Mundo")
+?>
+<?php
+//contagem de palavras
+echo "<br>";
+echo str_word_count ("Olá Mundo")
+?>
+<?php
+echo "<br>";
+//deu ruim
+echo strpos ("Novo bravo mundo", "iron Maind")
+?>
+
+<?php
+// Escrevendo Maiusculo
+$x = "Ola mundo";
+echo strtoupper($x);
+$x = "Novo Teste";
+echo strtolower ($x);
+?>
+<?php
+//Substituindo Palavra
+$x = "Meu teste";
+echo "<br>";
+echo str_replace ("Teste", "Arquivo", $x);
+?>
+<?php
+//Inverter Arquivo frente/Trás
+$x ="Meu teste";
+echo "<br>";
+echo strrev ($x);
+echo "<br>";
+?>
+<?php
+//Tirar os espaços em branco
+$x=" Meu teste";
+echo trim($x);
+echo "<br>";
+?>
+<?php
+echo"<input value='" . $x ."'>";
+echo "<br>";
+echo"<input value='" . trim($x) . "'>";
+?>
+<?php
+$x="Meu ";
+$y="teste";
+$z=$x . $y;
+echo"<br>";
+echo$z;
+?>
+<?php
+$x="Paola Hislane ";
+$y="Higino Braga";
+$z=$x . $y;
+echo"<br>";
+echo$z;
+?>
+

@@ -139,4 +139,116 @@ $z=$x . $y;
 echo"<br>";
 echo$z;
 ?>
+<?php
+$x = "My Test";
+echo "<br>";
+echo substr($x, 3);
+?>
 
+//<--*Caracteres de escape*-->
+//\' Single Qiuote
+//\" Double Quote
+//\$ PHP variables
+//\n New Line
+//\r Carriage Return
+//\t Tab
+//\f Form Feed
+//\ooo  Octal value
+//\xhh  Hex value  
+
+<?php
+$x = "Somos chamados de '\Vikigns\' do norte";
+?>
+<?php
+$a=5;
+$b=5.34;
+$c="25";
+$y=1.9e411;
+var_dump($a);
+echo "<br>";
+var_dump($b);
+echo "<br>";
+var_dump($c);
+echo "<br>";
+var_dump($y);
+echo "<br>";
+?>
+
+<?php
+//verificar se o tipo de uma
+//variavel e inteiro
+$x=5985;
+var_dump(is_int($x));
+echo "<br>";
+// verificar novamente
+$x=3.14;
+var_dump(is_int($x));
+echo "<br>";
+$x=10.123;
+var_dump(is_float($x));
+echo "<br>";
+$x=1.9e411;
+var_dump(is_infinite($x));
+echo "<br>";
+echo "<br>";
+echo "<br>";
+?>
+
+<?php
+$x=25.232;
+var_dump(is_string($x));
+echo "<br>";
+$x=5489;
+var_dump(is_string($x));
+echo "<br>";
+$x="Meu Teste";
+var_dump(is_string($x));
+echo "<br>";
+$x=12.5e869;
+var_dump(is_string($x));
+echo "<br>";
+?>
+
+<?php
+//Converter folat para inteiro
+echo "<br>";
+$x=120.45075;
+$int_cast=(int)$x;
+echo $int_cast;
+?>
+
+<?php
+echo "<br>";
+$octeto = 172;
+$mascara = 248;
+$value = $octeto & $mascara;
+echo "<br> Aplicando alteração AND entre a máscara e o octeto com o valor variavel $value";
+?>
+
+<?php
+$valor = 15;
+if ($valor == 15){ //testa se $valor é igual a 15//
+echo "<br> Valor é 15";
+}
+elseif ($valor >= 10){
+echo "<br> valor é maior ou igual a 10";
+}
+else {
+echo "<br> valor é menor que 10";
+
+}
+echo "<br><br>";
+echo "<br>";
+?>
+
+<?php
+$v = "Fabio";
+$nome = $v . " dos Reis";
+echo $nome;
+?>
+
+<?php
+echo 'Operador de negação' . "<br>";
+echo '
+
+?>

@@ -248,7 +248,67 @@ echo $nome;
 ?>
 
 <?php
-echo 'Operador de negação' . "<br>";
-echo '
+$valor=10;
+if ($valor==="10"){
+	echo "valor é strting";
+}
+else 	{
+	echo "Valor não é string";
+}
+echo "<br><br>";
+echo "Agora, fazendo cast no valor atribuido a variavel; <br>";
+$valor= (string)10;
+if ($valor==="10") {
+	echo "Valor não é string";
+}
+else {
+	echo "Valor não é sttring";
+}
+?>	
+<?php
+$a = 10;
+$b = 20;
+echo ($a == 10) && ($b == 20);
+echo"<br>";
+if (($a == 10) && ($b == 20)){
+	echo "Ambos os valores estão corretos <br>";
+}
+if (($a==20) && ($b==20)){
+	echo "Ambos os valores estão corretos <br>";
+}
+if (($a==10) && ($b==10)){
+echo "Ambos os valores estão errado <br>";
+}
+?>
+<br>
 
+<?php
+$a = 3+5*4; 
+$b = 4;
+$c = 5;
+echo "O valor da variavel é: $a";
+echo"<br>";
+echo"<br>";
+$b = (3+5)*4;
+echo "O valor da variavel é: $b";
+echo"<br>";
+echo"<br>";
+?>
+<?php
+$a = 10;
+$b = 9;
+$c = 5;
+$resultado = ($a+$b+$c)/3; 
+echo "A média é : $resultado";
+echo"<br>";
+?>
+<?php
+$n = 6;
+if ($n >= 7){
+	echo "Esta Aprovado (a);";
+}
+else {
+	echo"<br>";
+	echo "Esta Reprovado (a);";
+}
 ?>

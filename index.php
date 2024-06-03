@@ -312,3 +312,53 @@ else {
 	echo "Esta Reprovado (a);";
 }
 ?>
+<?php
+echo "<br>";
+$num = 22;
+
+if($num <21){
+echo "Num é menor que 18.";
+}
+else{ echo "Num é maior que 22.";
+}
+?>
+<br>
+
+<?php
+$num = 10;
+$mensagem = '';
+
+if($num>30){
+	$mensagem = ' O número é maior que 20 ';
+}
+
+elseif($num <20){
+	$mensagem = ' O número é menor que 20 ';
+}
+elseif ($num== 20){
+	$mensagem = ' O número é igual a 20 ';
+}
+else{
+	$mensagem = "O número é nulo.";
+}
+?>
+<br>
+<?php
+//Um aluno só pode usar o medicamento se for maior igual a 16 de idade, então se a idade for acima de 65 o uso tem que ser com restrições, se abaixo de 10 é proibido o uso do medicamento.
+$idade = 0;
+$mensagem ='';
+if ($idade >= 16 && $idade<=65){
+ $mensagem =' O Paciente pode usar o medicamento ';
+	}
+elseif($idade > 65){
+ $mensagem =' O uso tem que ser com restrições ';
+	}
+elseif($idade <= 10 && $idade == 1 ){
+ $mensagem =' É proibido o uso do medicamento ';
+	}
+else{
+$mensagem = 'Idade não reconhecida';
+	}
+echo $mensagem .$idade;
+?>
+<br>

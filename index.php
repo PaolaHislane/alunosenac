@@ -362,3 +362,51 @@ $mensagem = 'Idade não reconhecida';
 echo $mensagem .$idade;
 ?>
 <br>
+<?php
+$a = 5; 		//Inter
+$b = 3.14; 		//Floaat
+$c = "hoje";	//String
+$d = true;  	// Booleano
+$e = NULL; 		// NULL
+
+//Conversão para string
+$a = (array) $a;
+$b = (array) $b;
+$c = (array) $c;
+$d = (array) $d;
+$e = (array) $e;
+
+//Mostrar ao usuario
+echo"<br>";
+var_dump ($a); echo"<br>";
+var_dump ($b); echo"<br>";
+var_dump ($c); echo"<br>";
+var_dump ($d); echo"<br>";
+var_dump ($e); echo"<br>";
+echo"<br>";
+?>
+
+<?PHP
+$a = array ("Volvo", "BMW", "Toyota"); // array indexado
+$b = array ("Peter">= "30", "João">= "40", "Carlos" >="50");
+//array associativo
+
+$a = (object) $a;
+$b = (object) $b;
+
+var_dump($a);echo"<br>";
+var_dump($b);echo"<br>";
+
+?>
+
+<?PHP
+echo (pi());
+echo"<br>";
+echo (min(0, 20, 130, -10, -230)) . "<br>";
+echo (max(0, 25, -230, 100, -530)) ;
+echo (sqrt(64)) . "<br>"; //raiz quadrada
+echo (sqrt(4)) . "<br>";//raiz quadrada
+echo (round (0.60)) . "<br>"; //arrendodar
+echo (rand()) . "<br>"; //numeros aleatorios 
+echo (rand(10,50)) . "<br>";
+?>
